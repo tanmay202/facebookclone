@@ -59,6 +59,7 @@ body {
   box-sizing: border-box;
   position: relative;
   left: 3px;
+  font-size: 18px;
 }
 
 .navcent i {
@@ -87,6 +88,7 @@ body {
   align-items: center;
   height: 50px;
   width: 200px;
+  font-size: 20px;
 }
 .navright i {
   height: 40px;
@@ -120,24 +122,129 @@ body {
   display: flex;
   color: black;
   position: relative;
-  top: 80px;
+  top: 40px;
 }
 
 .leftpart {
-  height: 665px;
+  height: 100vh; /* Full viewport height to allow scrolling */
   width: 280px;
-
-  overflow-y: scroll;
+  overflow-y: scroll; /* Enable vertical scrolling */
   position: fixed;
+  top: 0; /* Ensure it stays fixed at the top */
   background: transparent;
+  overflow-x: hidden;
+ 
 }
 
-.icons {
-  margin-top: 20px;
-  margin-left: 20px;
+.leftpart::-webkit-scrollbar {
+  width: 7px;
 }
 
-.dpb {
+.leftpart::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgb(240,242,245);
+  opacity: 0; /* Hidden scrollbar by default */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.leftpart:hover::-webkit-scrollbar-thumb {
+  opacity: 1; /* Show scrollbar on hover */
+  background: rgb(153, 152, 152);
+}
+
+
+
+.dp1{
+  margin-left: 15px;
+  margin-top: 75px;
+  display: flex;
+  height: 44px;
+  width: 264px;
+ 
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.dp1:hover{
+  background-color: rgb(228,230,232);
+}
+
+
+.dp1 img{
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
-  margin-left: 20px;
 }
+
+.dp1 p,.minicons p{
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+
+
+.minicons{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  height: 44px;
+  width: 264px;
+  
+
+}
+
+
+.minicons:hover{
+  background-color: rgb(228,230,232);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.minicons img{
+  height: 36px;
+  width: 36px;
+}
+
+
+.scut{
+  color: rgb(103,105,109);
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: 10px;
+  height: 50px;
+
+}
+
+.scut p{
+  font-size: 15px;
+  color: rgb(8,102,255);
+  height: 20px;
+  width: 40px;
+ position: relative;
+ left: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+.scut p:hover{
+  background-color: rgb(228,230,232);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* 
+left part ended
+
+center part started */
+
+
+
+
+
