@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 242, 245);
+  color: black;
+}
+.navbar {
+  height: 55px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.navleft i {
+  margin-left: 10px;
+}
+.navleft input {
+  border-radius: 20px;
+  height: 40px;
+  padding-left: 10px;
+  margin-left: 5px;
+  background-color: rgb(240, 242, 245);
+  border: none;
+  width: 220px;
+}
+
+.navcent {
+  height: 50px;
+  width: 500px;
+  position: relative;
+  right: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  left: 3px;
+}
+
+.navcent i {
+  height: 50px;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.navcent i:not(.bn):hover {
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bn {
+  border-radius: 0%;
+  border-bottom: 2px solid rgb(8, 102, 255);
+  cursor: pointer;
+}
+
+.navright {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+}
+.navright i {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(228, 230, 235);
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.navright i:hover {
+  background-color: rgb(216, 218, 223);
+  cursor: pointer;
+}
+
+.navright img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* navbar ended */
+
+/* main body started */
+
+.main {
+  background-color: rgb(240, 242, 245);
+  display: flex;
+  color: black;
+  position: relative;
+  top: 80px;
+}
+
+.leftpart {
+  height: 665px;
+  width: 280px;
+
+  overflow-y: scroll;
+  position: fixed;
+  background: transparent;
+}
+
+.icons {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.dpb {
+  border-radius: 50%;
+  margin-left: 20px;
+}
